@@ -1,3 +1,6 @@
+from stats import get_num_words
+
+
 #Open that file
 def main():
     #Define path in a variable
@@ -10,10 +13,7 @@ def main():
     generate_report(book_path, num_words, chars_dict)
 
 
-def get_num_words(text):
-    words = text.split()
-    count = len(words)
-    return count
+
 
 
 def get_chars_dict(text):
